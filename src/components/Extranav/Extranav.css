@@ -1,39 +1,66 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 .extra-nav{
     display:flex;
     flex-direction: column;
     align-items: center;
-   
     width:100%;
-    background-color: aquamarine;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    background-color: #1C352D;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-family:poppins;
 }
 .contact-div{
     display: flex;
+    align-items: center;
+}
+.phone-icon{
+    font-size:1.2rem;
+}
+.phone-number{
+    margin-left: 3px;
+    font-size: 0.8rem;
 }
 .discount-div{
     display: none;
 }
 .dropdown-div{
     display: flex;
+    justify-content: space-around;
+    width: 185px;
+    font-size: 0.8rem;
+    margin-top: 10px;
 }
 .dropdown{
+    position: relative;
     display: flex;
     align-items: center;
+}
+.chevron-down{
+    margin-left:10px;
+}
+.dropdown-list{
+    display: none;
+}
+.dropdown:hover ul.dropdown-list{
+    display: flex;
 }
 @media screen and (min-width: 768px) {
     .extra-nav{
         flex-direction: row;
         justify-content: space-between;
-        height: 30px;
     }
     .contact-div{
         padding-left: 45px;
     }
     .discount-div{
         display:flex;
+        justify-content: space-between;
+        width: 300px;
+        font-size: 0.8rem;
     }
     .dropdown-div{
         padding-right:45px;
+        margin: 0;
     }
 }
