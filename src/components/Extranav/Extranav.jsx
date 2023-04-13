@@ -21,14 +21,19 @@ export default function Extranav(){
                 <p className="dropdown-text">Eng</p>
                 <FiChevronDown className="chevron-down"/>
                 <ul className="dropdown-list">
-                  <li className=""></li>
-                  <li className=""></li>
-                  <li className=""></li>
+                  <li className="dropdown-list-item">Yoruba</li>
+                  <li className="dropdown-list-item">Arabic</li>
+                  <li className="dropdown-list-item">English</li>
                 </ul>
              </div>
-             <div className="dropdown">
+             <div className="dropdown-2">
                  <p>Location</p>
                  <FiChevronDown className="chevron-down"/>
+                 <ul className="dropdown-list-2">
+                  <li className="dropdown-list-item">Africa</li>
+                  <li className="dropdown-list-item">Europe</li>
+                  <li className="dropdown-list-item">Asia</li>
+                </ul>
              </div>
           </div>
        </section>
