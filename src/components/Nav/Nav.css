@@ -3,3 +3,42 @@
     height:70px;
     width:100%;
 }
+.logo-hamburger-div{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height:70px;
+}
+.desktop-nav{
+    display: none;
+}
+.mobile-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tablet-nav{
+    display: none;
+}
+.search-form{
+    display: none;
+}
+@media screen and (min-width:768px){
+    .nav{
+        display: flex;
+    }
+    .hamburger{
+        display: none;
+    }
+    .mobile-nav{
+        display: none;
+    }
+    .tablet-nav{
+        display: flex;
+        width:100%;
+    }
+    .logo-hamburger-div{
+        display: none;
+    }
+}
