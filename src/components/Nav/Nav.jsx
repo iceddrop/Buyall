@@ -11,7 +11,7 @@ export default function Nav(){
     function isDropped(){
         setDropdownMenu(preVal => !preVal)
     }
-    console.log(dropdownMenu)
+
     return(
         <div className="nav">
          <div className="logo-hamburger-div">
