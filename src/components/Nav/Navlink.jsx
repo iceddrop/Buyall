@@ -1,8 +1,7 @@
 import React from "react";
 import "../../index.css";
 import "./Nav.css";
-
-import {GrSearch} from "react-icons/gr";
+import Searchcomp from "../Nav/Searchcomp";
 import {FiChevronDown} from "react-icons/fi";
 import {RxPerson} from "react-icons/rx";
 import {TbShoppingCartPlus} from "react-icons/tb";
@@ -10,31 +9,26 @@ export default function Navlink(){
     return(
         <>
 
-                <ul>
+                <ul className="navlist">
                     <li>
-                    <div>
+                    <div className="category">
                         <p>Category</p>
-                        <FiChevronDown/>
+                        <FiChevronDown className="chevron-down"/>
                     </div>  
                     </li>  
                     <li>Deals</li>  
                     <li>What's New</li> 
                     <li>Delivery</li> 
                 </ul>
-                <form className="search-form">
-                <div className="search-div">
-                    <input type="text" className="search-input" name="search" id="searchInput" placeholder="search product"/>
-                    <GrSearch/>
-                </div> 
-                </form>
-                <ul>
-                    <li>
-                    <p>Account</p>
-                    <RxPerson/>
+                <Searchcomp/>
+                <ul className="navlist-2">
+                    <li className="account"> 
+                    <RxPerson className="person-icon"/>
+                    <p className="account-text">Account</p>
                     </li> 
-                    <li>
-                    <p>Cart</p>
-                    <TbShoppingCartPlus/> 
+                    <li className="cart">
+                    <TbShoppingCartPlus className="cart-icon"/> 
+                    <p className="cart-text">Cart</p>
                     </li>   
                 </ul> 
         </>

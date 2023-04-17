@@ -17,16 +17,83 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 10px;
+    background-color: aqua;
+    padding: 10px;
+    height: 250px;
 }
 .tablet-nav{
     display: none;
 }
+.site-logo{
+    padding-left: 15px;
+}
+.hamburger{
+    padding-right:19px;
+}
 .search-form{
     display: none;
+}
+.site-logo-2{
+    display: none;
+}
+.category{
+    display:flex;
+    align-items: center;
+}
+.chevron-down{
+    margin-left:2px;
+}
+.account {
+    display:flex;
+}
+.cart{
+    display: flex;
+}
+.close-dropdown{
+    display: none;
+}
+.navlist{
+   list-style:none;
+   font-family: poppins;
+   font-size: 1.1rem;
+}
+.navlist-2{
+    list-style: none;
+    font-family: poppins;
+    font-size: 1.1rem;
+}
+.cart-icon{
+    margin-right:5px;
+    font-size: 1.6rem;
+    font-weight: lighter;
+}
+.person-icon{
+    margin-right:5px;
+    font-size: 1.6rem;
+    font-weight: lighter;
+}
+@media screen and (max-width: 460px ){
+   .navlist{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 130px;
+   padding-top: 13px;
+   }
+   .navlist-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top:13px;
+    height: 70px;
+   }
 }
 @media screen and (min-width:768px){
     .nav{
         display: flex;
+        align-items: center;
+        justify-content: space-between!important;
     }
     .hamburger{
         display: none;
@@ -36,9 +103,57 @@
     }
     .tablet-nav{
         display: flex;
+        justify-content: space-around;
         width:100%;
     }
     .logo-hamburger-div{
         display: none;
+    }
+    .site-logo-2{
+        display: block;
+        height: 40px;
+        padding-left:20px;
+    }
+    .navlist{
+        display: flex;     
+        justify-content: space-between;
+        width:330px;
+        font-size:1rem;
+        font-weight: bold;
+    }
+    .navlist-2{
+        display:flex;
+        justify-content: space-between;
+        width: 180px;
+    }
+    .cart-text{
+        font-size:1rem!important;
+        font-weight: bolder;
+    }
+    .account-text{
+        font-size:1rem!important;
+        font-weight: bolder;
+    }
+}
+@media screen and (min-width:1024px){
+    .navlist{
+        width:370px;
+    }
+    .search-form{
+        display: block;
+    }
+    .search-div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width:300px;
+        border: 1px solid grey;
+        padding: 7px;
+        border-radius: 15px;
+    }
+    .search-input{
+        border: none;
+        background-color: whitesmoke;
+        margin-left: 10px;
     }
 }
