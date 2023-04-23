@@ -1,8 +1,8 @@
 import React from "react";
 import "../../index.css";
 import "./Nav.css";
-import Tabletnav from "./Tabletnav";
-import Mobilenav from "./Mobilenav";
+import TabletNav from "./TabletNav";
+import MobileNav from "./MobileNav";
 import DesktopNav from "./DesktopNav";
 import logo from "../../assets/63e86ab4c21faa7bc0bd90dd_Logo.svg";
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -20,8 +20,8 @@ export default function Nav() {
       </div>
       <img src={logo} className="site-logo-2" alt="shop-cart-logo" />
       <DesktopNav />
-      <Tabletnav />
-      {dropdownMenu && <Mobilenav />}
+      <TabletNav />
+      {dropdownMenu && <MobileNav />}
     </div>
   );
 }
