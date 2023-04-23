@@ -1,9 +1,9 @@
 import React from "react";
 import "../../index.css";
 import "./Nav.css";
-import Desktopnav from "./Desktopnav";
 import Tabletnav from "./Tabletnav";
 import Mobilenav from "./Mobilenav";
+import DesktopNav from "./DesktopNav";
 import logo from "../../assets/63e86ab4c21faa7bc0bd90dd_Logo.svg";
 import { RxHamburgerMenu } from "react-icons/rx";
 export default function Nav() {
@@ -19,7 +19,7 @@ export default function Nav() {
         <RxHamburgerMenu className="hamburger" onClick={isDropped} />
       </div>
       <img src={logo} className="site-logo-2" alt="shop-cart-logo" />
-      <Desktopnav />
+      <DesktopNav />
       <Tabletnav />
       {dropdownMenu && <Mobilenav />}
     </div>

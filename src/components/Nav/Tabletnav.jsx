@@ -4,5 +4,5 @@ export default function Tabletnav(){
         <nav className="tablet-nav">
            <Navlink/>
         </nav>
-    )
+    );
 }

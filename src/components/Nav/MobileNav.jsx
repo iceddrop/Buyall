@@ -4,5 +4,5 @@ export default function Mobilenav(){
         <nav className="mobile-nav">
            <Navlink/>
         </nav>
-    )
+    );
 }
