@@ -7,7 +7,7 @@ export default function Searchcomp(){
                 <form className="search-form">
                 <div className="search-div">
                     <input type="text" className="search-input" name="search" id="searchInput" placeholder="search product"/>
-                    <GrSearch/>
+                    <GrSearch className="search-icon"/>
                 </div> 
                 </form>
         </>

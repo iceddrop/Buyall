@@ -2,7 +2,7 @@ import React from "react";
 import "../../index.css";
 import "./Nav.css";
 import Searchcomp from "../Nav/Searchcomp";
-import { FiChevronDown } from "react-icons/fi";
+import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 import { RxPerson } from "react-icons/rx";
 import { TbShoppingCartPlus } from "react-icons/tb";
 import category from "../../assets/furniture.png";
@@ -17,63 +17,64 @@ export default function Navlink() {
       <ul className="navlist">
         <li>
           <div className="category">
-            <p onClick={dropCategory}>Category</p>
-            <FiChevronDown className="chevron-down" />
+            <p onClick={dropCategory}  className="nav-item">Category</p>
+            {categoryDrop ? <FiChevronUp className="chevron-down"/> : <FiChevronDown className="chevron-down" />}
             {categoryDrop &&
             <div className="category-dropdown">
-              <h5>Popular categories</h5>
+              <h5 className="popular-categories-text">Popular categories</h5>
+              <hr></hr>
                 <ul className="category-dropdown-menu">
                   <li>
                     <div className="category-sub-div">
                       <img src={category} className="" alt="" />
-                      <div >
-                        <h6>Furniture</h6>
-                        <p>240 items available</p>
+                      <div className="categories-text-div">
+                        <h6 className="popular-categories-products-header">Furniture</h6>
+                        <p className="categories-paragraph">240 items available</p>
                       </div>
                     </div>
                   </li>
                   <li>
                     <div className="category-sub-div">
                       <img src={category} className="" alt="" />
-                      <div>
-                        <h6>Furniture</h6>
-                        <p>240 items available</p>
+                      <div className="categories-text-div">
+                        <h6 className="popular-categories-products-header">Furniture</h6>
+                        <p className="categories-paragraph">240 items available</p>
                       </div>
                     </div>
                   </li>
                   <li>
                     <div className="category-sub-div">
                       <img src={category} className="" alt="" />
-                      <div>
-                        <h6>Furniture</h6>
-                        <p>240 items available</p>
+                      <div className="categories-text-div">
+                        <h6 className="popular-categories-products-header">Furniture</h6>
+                        <p className="categories-paragraph">240 items available</p>
                       </div>
                     </div>
                   </li>
                   <li>
                     <div className="category-sub-div">
                       <img src={category} className="" alt="" />
-                      <div>
-                        <h6>Furniture</h6>
-                        <p>240 items available</p>
+                      <div className="categories-text-div">
+                        <h6 className="popular-categories-products-header">Furniture</h6>
+                        <p className="categories-paragraph">240 items available</p>
                       </div>
                     </div>
                   </li>
                   <li>
                     <div className="category-sub-div">
                       <img src={category} className="" alt="" />
-                      <div>
-                        <h6>Furniture</h6>
-                        <p>240 items available</p>
+                      <div className="categories-text-div">
+                        <h6 className="popular-categories-products-header">Furniture</h6>
+                        <p className="categories-paragraph">240 items available</p>
                       </div>
                     </div>
                   </li>
                   <li>
                     <div className="category-sub-div">
                       <img src={category} className="" alt="" />
-                      <div>
-                        <h6>Furniture</h6>
-                        <p>240 items available</p>
+                      <div className="categories-text-div">
+                        <h6 className="popular-categories-products-header">Furniture</h6>
+                        <p className="categories-paragraph">240 items available</p>
                       </div>
                     </div>
                   </li>
@@ -82,9 +83,9 @@ export default function Navlink() {
             }
           </div>
         </li>
-        <li>Deals</li>
-        <li>What's New</li>
-        <li>Delivery</li>
+        <li className="nav-item">Deals</li>
+        <li className="nav-item">What's New</li>
+        <li className="nav-item">Delivery</li>
       </ul>
       <Searchcomp />
       <ul className="navlist-2">
